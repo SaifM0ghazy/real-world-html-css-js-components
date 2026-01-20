@@ -1,0 +1,251 @@
+
+* , *::before , *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #919294;
+    min-height: 100vh;
+    font-family: sans-serif , Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.github-logo-container {
+    position: absolute;
+    right: 0;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 5px;
+    top: 0;
+}
+
+.login-card {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+}
+
+.login-card .profile-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.login-card .profile-img-container .profile-img {
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.login-card .profile-img-container .profile-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.login-card .profile-name-container {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.login-input-container {
+    width: 100%;
+    position: relative;
+}
+
+.login-input-container input {
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    padding: 14.9px 37px 14.9px 20px;
+    box-shadow: inset 0px 1px 1px #b7b8b945;
+    font-size: 18px;
+}
+
+.login-input-container input:focus {
+     border-color: #0866ff;
+     outline: none;
+     box-shadow: 0px 0px 0px 2px #e7f3ff;
+}
+
+.login-input-container input::placeholder {
+    font-size: 15px;
+}
+
+.login-input-container input:focus::placeholder {
+    color: #90949c;
+}
+
+.login-card .Rememberme-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    user-select: none;
+    cursor: pointer;
+    color: #606770;
+    margin-bottom: 20px;
+}
+
+.login-card .Rememberme-container > div {
+    display: flex;
+    align-items: center;
+}
+
+.login-card .Rememberme-container .Check-container input[type="checkbox"] {
+    display: none;
+}
+
+.login-card .Rememberme-container .Check-container .custom-cheak-box {
+    width: 19.33px;
+    height: 19.33px ;
+    border: 1px solid #d7dade;
+    border-radius: 4px;
+    position: relative;
+    flex-shrink: none;
+}
+
+.login-card .Rememberme-container:hover .custom-cheak-box {
+    background-color: #f0f2f5;
+}
+
+.login-card .Rememberme-container .Check-container input[type="checkbox"]:checked + .custom-cheak-box {
+    background-color: #0866ff;
+}
+
+.login-card .Rememberme-container .Check-container input[type="checkbox"]:checked + .custom-cheak-box::before {
+    content: '';
+    width: 12px;
+    height: 6px;
+    display: block;
+    left: 54%;
+    position: absolute;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid white;
+    rotate: 315deg;
+    border-left: 2px solid white;
+}
+
+.primary-btn {
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    padding: 13px;
+    background-color: #0866ff;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    user-select: none;
+    transition: all ease 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #166fe5;
+}
+
+.Forgotten-link {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 26px;
+    font-size: 18px;
+    color: #0866ff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+
+.Forgotten-link:hover {
+    text-decoration: underline;
+}
+
+.login-card .quit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebedf0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.login-card .quit-container:hover {
+    background-color: #dadde1;
+}
+
+.login-card .quit-container:active {
+    background-color: #bec3c9;
+}
+
+.login-card .quit-container:active {
+    scale: 0.96;
+}
+
+.login-card .quit-container .quit-photo {
+    width: 20px;
+    height: 20px;
+    background-image: url(/imgs/4rnXbyIZ7vG.png);
+    background-repeat: no-repeat;
+    background-position-y: -43px;
+}
+
+
+.eye-container {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.eye-container.active {
+    display: flex;
+}
+
+.eye-container .eye-img {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+}
+
+.eye-container:hover {
+    background-color: #ebedf0;
+}
+
+.eye-container:active {
+    background-color: #d9d9d9;
+}
