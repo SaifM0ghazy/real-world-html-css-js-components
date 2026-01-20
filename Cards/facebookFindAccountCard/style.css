@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    font-family: sans-serif;
+    padding: 9px;
+}
+
+.find-account-card {
+    max-width: 500px;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.find-account-card .title-container {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.find-account-card .content-container {
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.find-account-card .content-container .input-container {
+    /* background-color: red; */
+    position: relative;
+    margin-top: 14px;
+}
+.find-account-card .content-container .input-container input {
+    width: 100%;
+    min-width: 0;
+    /* outline: none; */
+    border: 1px solid #ccd0d5;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.find-account-card .links-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.primary-btn , 
+.sec-btn  {
+  
+    color: white;
+    text-decoration: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.primary-btn {
+      background: #1877f2;
+}
+
+.sec-btn {
+    background-color: #e4e6eb;
+    color: #4b4f56;
+}
