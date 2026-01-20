@@ -1,0 +1,211 @@
+* , *::after , *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #535353;
+    font-family: sans-serif , 'Courier New', Courier, monospace;
+    padding: 9px;
+}
+
+.login-card {
+    max-width: 486px;
+    width: 100%;
+    /* height: 500px; */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+
+.login-card .title-container {
+    /* text-align: center; */
+    margin-top: 30px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.login-input-container {
+    margin-top: 15px;
+    position: relative;
+}
+
+.login-input-container input {
+    width: 100%;
+    min-width: 0;
+    padding: 25px 16px 10px;
+    height: 56px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #ced0d4;
+}
+
+.login-input-container input:hover {
+    border-color: #65676b;
+}
+
+.login-input-container label {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    width: 100%;
+    right: 0;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 16px;
+    user-select: none;
+    pointer-events: none;
+    color: #65676b;
+    transition: all ease 0.1s;
+    font-size: 18px;
+
+}
+
+.login-input-container input:focus + label {
+    color: #1b74e4;
+}
+
+.login-input-container input:focus +  label , 
+.login-input-container input:not(:placeholder-shown) + label {
+    font-size: 12px;
+    top: 17px;
+    text-align: start;
+    
+}
+
+.login-input-container input:focus {
+        box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #1b74e4;
+
+}
+
+.login-input-container input.password-input {
+    padding-right: 50px;
+}
+
+
+.login-input-password-container .EyeImg {
+    position: absolute;
+    right: 10px;
+    width: 27px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+    height: 27px;
+    object-fit: contain;
+}
+
+.login-input-password-container .EyeImg.active {
+    display: block;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: #1b74e4;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.login-card .primary-btn {
+    margin-top: 15px;
+}
+
+.Forgotten-password-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #1b74e4;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.Forgotten-password-link:hover {
+    text-decoration: underline;
+}
+
+.or-row {
+    width: 90%;
+    position: relative;
+    height: 1px;
+    background-color: #ccd0d5;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.or-row::before {
+    content: 'or';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background-color: #ffffff;
+    display: block;
+    padding: 0 15px;
+    color: #65676b;
+    font-weight: 700;
+}
+
+.btn-create-acc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sec-btn {
+    padding: 10px 46px;
+    background: #31a24c;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+} 
+
+.quit-container {
+    width: 36px;
+    height: 36px;
+    background-color: #e4e6eb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.quit-container .quit-img {
+    width: 20px;
+    height: 20px;
+    background-repeat:no-repeat;
+    background-image: url("/imgs/dThxgqTEuaT.png");
+    background-position: 0 -302px;
+}
+
+.quit-container:active {
+    scale: 0.95;
+    background-color: #d9d9d9;
+}
+
